@@ -53,7 +53,10 @@ let orderTax = subtotal * waStateTaxRate;
 // Calculate `totalPrice` by adding `subtotal` and `orderTax`.
 let totalPrice = subtotal + orderTax;
 
-
+// Section for calculating tip.
+let tip10 = totalPrice * .10; // 10% tip
+let tip15 = totalPrice * .15; // 15% tip
+let tip20 = totalPrice * .20; // 20% tip
 
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
@@ -71,6 +74,9 @@ let receiptTemplate = `
     <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class="text-right">Total: $${totalPrice.toFixed(2)}</p>
+    <p class="text-right">--------</p>
+    <p class ="text-right">Suggested Tip: 10% = $${tip10.toFixed(2)} 15% = $${tip15.toFixed(2)} 20% = $${tip20.toFixed(2)}</p>
+    <p class ="text-center">Have a great day, you rock!</p>
 `
 
 ///////////////////////////////////////////////////////////////////////
