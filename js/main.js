@@ -9,24 +9,24 @@
 //
 // TODO: Prompt the user for what kind of bread they would like.
 // Ideally, that would look something like: "What kind of bread (white, wheat, flat)?"
-
+var bread = prompt("What kind of bread (white, wheat, or flat)?");
 
 
 // TODO: Prompt the user for what kind of meat(s) they would like.
-// Indicate they should separate multiple items with a comma:
-// "What kind of meat? (Separate meats with a comma if you would like more than one.)"
+// Indicate they should separate multiple items womma if you would like more than one.)"
+var meat = prompt("What kind of meat? (ham, turkey, roast beef) Separate with commas if you would like more than one.");
 
-
+// 
 
 // TODO: Prompt the user for what kind of toppings they would like.
 // We expect this to be multiple, so ask them to provide you with a
 // comma-separated list using a user friendly prompt.
-
+var topping = prompt("Which toppings would you like? Please separate with commas. (lettuce, tomato, peppers, spinach)");
 
 
 // TODO: Prompt the user for what kind of condiments they would like.
 // Again, we should expect a comma-separated list if items here.
-
+var condiment = prompt("What condiments would you like? Pleas separate with commas. (mayo, mustard, thousand island)");
 
 
 // Step Two ////////////////////////////////////////////////////////////
@@ -45,9 +45,9 @@ let prices = {
 
 // TODO: Convert order information from Strings to Arrays.
 
-let meatArray = null;
-let toppingArray = null;
-let condimentArray = null;
+let meatArray = ('ham', 'turkey', 'roast beef');
+let toppingArray = ('lettuce', 'tomato', 'peppers', 'spinach');
+let condimentArray = ('mayo', 'mustard', 'thousand island');
 
 // TODO: Calculate cost for meat, toppings, and condiments.
 // This requires you to determine the length of each Array you just made
