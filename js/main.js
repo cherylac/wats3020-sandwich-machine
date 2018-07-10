@@ -9,14 +9,8 @@
 //
 // Customer order info
 let breadOrder = prompt("What kind of bread would you like (white, wheat, or flat)?", "wheat");
-
-
 let meatOrder = prompt("What kind of meat would you like? Please separate with commas if you would like more than one.");
-
-
 let toppingOrder = prompt("Which toppings would you like? Please separate with commas if multiple");
-
-
 let condimentOrder = prompt("Which condiments would you like? Please separate with commas.");
 
 
@@ -76,7 +70,7 @@ let receiptTemplate = `
     <p class="text-right">Total: $${totalPrice.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class ="text-right">Suggested Tip: 10% = $${tip10.toFixed(2)} 15% = $${tip15.toFixed(2)} 20% = $${tip20.toFixed(2)}</p>
-    <p class ="text-center">Have a great day, you rock!</p>
+    <p>Have a great day, you rock!</p>
 `
 
 ///////////////////////////////////////////////////////////////////////
